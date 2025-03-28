@@ -13,7 +13,7 @@ var db *pgx.Conn
 var redisClient *redis.Client
 
 func connectDb() {
-	connStr := "postgres://admin:admin123@localhost:5432/chatdb"
+	connStr := //TODO: Add your postgreSQL Connection string here.
 	var err error
 	db, err = pgx.Connect(context.Background(), connStr)
 	if err != nil {
